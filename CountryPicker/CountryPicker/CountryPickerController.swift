@@ -329,7 +329,7 @@ extension CountryPickerController: UISearchBarDelegate {
         
         let filteredCountries = countries.compactMap { (country) -> Country? in
             
-            let countryMatchFound = country.countryName.lowercased().contains(searchText)
+            let countryMatchFound = country.countryName.lowercased().hasPrefix(searchText)
             
             // Filter country by country name first character
             if CountryManager.shared.defaultFilter == .countryName, countryMatchFound {
