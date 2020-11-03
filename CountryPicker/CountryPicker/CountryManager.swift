@@ -52,7 +52,7 @@ open class CountryManager {
     }
     
     
-    internal var lastCountrySelected: Country?
+    var lastCountrySelected: Country?
     
     /// Default country filter option
     internal let defaultFilter: CountryFilterOption = .countryName
